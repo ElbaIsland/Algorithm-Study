@@ -19,6 +19,7 @@ public class ReverseString {
     	char[] test = {'h','e','l','l','o'};
     	char[] test2 = {'H','a','n','n','a','h'};
 		
+		reverseString(test);
 		reverseString(test2);
 		
     }
