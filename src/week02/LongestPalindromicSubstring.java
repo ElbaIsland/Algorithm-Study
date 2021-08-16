@@ -1,64 +1,55 @@
 package week02;
 
-public class LongestPalindromicSubstring {
+public class LongestPalindromicSubstring2 {
 
     public String longestPalindrome(String s) {
         
-    	int lastLeftLen = 0, lastRightLen = 0;
-    	
-        System.out.println(s);
-        System.out.println("==========");
-        String[] sArray = s.split("");    
+        int startidx = 0;
+        int endidx = 0;
         
-        for(int i = 0; i < s.length(); i++) {
-        	int leftLen = i;
-        	int rightLen = i;
-        	char word = s.charAt(i);	//	b, a, b, a, d
-        	
-        	while (leftLen >= 0 && s.charAt(leftLen) == word) {
-				leftLen--;	//	같은 글자 기준으로 갈수있는 한 왼쪽으로~
-			}
-        	
-        	while (rightLen < s.length() && s.charAt(rightLen) == word) {
-				rightLen++;	//	같은 글자 기준으로 갈수있는 한 오른쪽으로~
-			}        	
+        for (int i = 0; i < s.length(); i++) {
 
-       // 	System.out.println(i +  "번째 word : " + word + ", leftLen : " + leftLen + ", rightLen : " + rightLen);
-        
-        	while (leftLen >= 0 && rightLen < s.length()) {
-        		
-        		//	펠린드롬 성립이 안된다면 하지마
-                if (s.charAt(leftLen) != s.charAt(rightLen)) {
-                    break;	
-                }
-                
-                //	펠린드롭 성립이 된다면 한칸씩 이동, 다시 체크
-                leftLen--;
-                rightLen++;     
+            char c = s.charAt(i);
+            int left = i;
+            int right = i;
+
+            while (left >= 0 && s.charAt(left) == c) {
+                left--;
             }
-        
-        	leftLen = leftLen + 1;	//	leftLen을 +1 하지 않으면 -1에서부터 시작...
-        	
-       // 	System.out.println("최대 유효 펠린드롬 이동 >> , leftLen : " + leftLen + ", rightLen : " + rightLen);
-       // 	System.out.println(" After >> word : " + s.substring(leftLen, rightLen));
-       // 	System.out.println("==========");
-        	
-        	if ((lastRightLen - lastLeftLen) < (rightLen - leftLen)) {
-        		lastRightLen = rightLen;
-        		lastLeftLen = leftLen;
-			}
-             
-        }	// for end
-    
-    //  System.out.println(s.substring(lastLeftLen, lastRightLen));
-        return s.substring(lastLeftLen, lastRightLen);
+
+            while (right < s.length() && s.charAt(right) == c) {
+                right++;
+            }
+            
+            System.out.println(i +  "번째 word : " + c + ", leftLen : " + left + ", rightLen : " + right);
+
+            while (left >= 0 && right < s.length()) {
+                if (s.charAt(left) != s.charAt(right)) {
+                    break;
+                }
+                left--;
+                right++;
+            }
+
+            // left + 1 and right - 1 are actually the start and end index of the Palindromic string
+            // we don't set "right" because String.substring function required end index exclusively
+            
+            left = left + 1;
+            if (endidx - startidx < right - left) {
+            	startidx = left;
+            	endidx = right;
+            }
+        }
+        System.out.println(s.substring(startidx, endidx));
+        return s.substring(startidx, endidx);
+
         
     }
     
     
     public static void main(String[] args) {
 		
-    	LongestPalindromicSubstring palindrome = new LongestPalindromicSubstring();
+    	LongestPalindromicSubstring2 palindrome = new LongestPalindromicSubstring2();
 
     	palindrome.longestPalindrome("aaaa");
     	
