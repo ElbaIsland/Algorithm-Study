@@ -24,6 +24,7 @@ public class TwoSum {
     			System.out.println("가져온값 : " + (target - nums[i]));
     			
     			System.out.println("넣을 key : " + i);
+    			System.out.println("넣을 key+1 : " + numArr.get(Integer.toString((target - nums[i]))));
     			System.out.println("nums[i]값 : " + nums[i]);
     			
 				returnNums[0] = i;
@@ -43,9 +44,9 @@ public class TwoSum {
     }
     
     public static void main(String[] args) {
-    	int [] test = {3,3};	
+    	int [] test = {2,11,15,7};	
 		TwoSum ts = new TwoSum();
-		ts.twoSum(test, 6);
+		ts.twoSum(test, 9);
 	}
     
 }

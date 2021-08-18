@@ -1,6 +1,6 @@
 package week02;
 
-public class LongestPalindromicSubstring2 {
+public class LongestPalindromicSubstring {
 
     public String longestPalindrome(String s) {
         
@@ -30,16 +30,17 @@ public class LongestPalindromicSubstring2 {
                 left--;
                 right++;
             }
-
-            // left + 1 and right - 1 are actually the start and end index of the Palindromic string
-            // we don't set "right" because String.substring function required end index exclusively
-            
+         
             left = left + 1;
+            System.out.println("후처리 " + i +  "번째 word : " + c + ", leftLen : " + left + ", rightLen : " + right);
+            
             if (endidx - startidx < right - left) {
             	startidx = left;
             	endidx = right;
             }
+            
         }
+        System.out.println("startidx : " + startidx + ", endidx : " + endidx);
         System.out.println(s.substring(startidx, endidx));
         return s.substring(startidx, endidx);
 
@@ -49,9 +50,9 @@ public class LongestPalindromicSubstring2 {
     
     public static void main(String[] args) {
 		
-    	LongestPalindromicSubstring2 palindrome = new LongestPalindromicSubstring2();
+    	LongestPalindromicSubstring palindrome = new LongestPalindromicSubstring();
 
-    	palindrome.longestPalindrome("aaaa");
+    	palindrome.longestPalindrome("babad");
     	
     	
 	}
