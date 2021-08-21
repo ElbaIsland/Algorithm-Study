@@ -11,7 +11,7 @@ public class ArrayPartition1 {
     	int returnSumValue = 0;
     	Map<Integer, Integer> arrPartition = new HashMap<Integer, Integer>();
     	Arrays.sort(nums);
-    	
+    	System.out.println(Arrays.toString(nums));
     	for (int i = 0; i < nums.length/2; i++) {
     	//	int minVal = Math.min(i, i);
     	//	arrPartition.put(nums[i*2], nums[i*2+1]);
