@@ -1,5 +1,15 @@
 package week01;
 
+/* ====================
+ * 문자열 조작 
+ * ====================
+   리트코드(LeetCode) 125번 문제 유효한 펠린드롬
+ 
+ - 주어진 문자열이 유효한 펠린드롬인지 판별하는 문제
+ - 풀이 : 
+  
+ */
+
 public class ValidPalindrome {
 
     public boolean isPalindrome(String s) {
@@ -7,7 +17,7 @@ public class ValidPalindrome {
         Boolean isPalindrome = true;
 
         s = s.replaceAll("[^a-zA-Z0-9]", "").replaceAll(" ", "").toUpperCase().trim();
-        System.out.println(s);
+        // System.out.println(s);
         String[] sArray = s.split("");
         
         StringBuffer sb = new StringBuffer(s);

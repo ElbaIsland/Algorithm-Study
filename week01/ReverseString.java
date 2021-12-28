@@ -1,5 +1,15 @@
 package week01;
 
+/* ====================
+ * 문자열 조작 
+ * ====================
+   리트코드(LeetCode) 344번 문제 문자열 뒤집기
+ 
+ - 주어진 문자열을 뒤집는 문제
+ - 풀이 : 
+  
+ */
+
 public class ReverseString {
 
     public static void reverseString(char[] s) {

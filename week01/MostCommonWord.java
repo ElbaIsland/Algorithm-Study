@@ -3,6 +3,15 @@ package week01;
 import java.util.HashMap;
 import java.util.Map;
 
+/* ====================
+ * 문자열 조작 
+ * ====================
+   리트코드(LeetCode) 819번 문제 가장 흔한 단어
+ 
+ - 주어진 문자열에서 가장 많이 사용된 단어를 찾는 문제
+ - 풀이 : 
+  
+ */
 
 public class MostCommonWord {
     public String mostCommonWord(String paragraph, String[] banned) {
