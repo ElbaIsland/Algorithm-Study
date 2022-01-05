@@ -4,59 +4,50 @@ import java.util.*;
 
 public class ExpresstionByN {
 	
+    static int n;
+    static int targetNumber;
+    static int answer = Integer.MAX_VALUE;  //  최대값 기본 세팅
 
-    public String solution(int n, int k, String[] cmd) { 
+    public int solution(int N, int number) {
         
-        // n : 처음 표의 행 개수
-        // k : 선택된 행위 위치
+        // n : 주어진 숫자, (target)Number : 사칙연산을 통한 목표 숫자
+        n = N;
+        targetNumber = number;
+        dfs(0, 0);        
+        return answer == Integer.MAX_VALUE ? -1 : answer;
+    }
+
+    private void dfs(int count, int prev) { //  count : n사용횟수, prev : 이전 dfs 연산값
         
-        Stack<Integer> remove = new Stack<>();
-        
-        int table_size = n; // table_size 지정
-        
-        for(int i = 0; i < cmd.length; i++) {
-            
-            char order = cmd[i].charAt(0);
-            
-            if(order == 'U') 
-            {   // 현재 row 위치에서 숫자 개수만큼 뺀다. (up row로 이동)
-                k -= Integer.valueOf(cmd[i].substring(2)); 
-            } 
-            else if(order == 'D')
-            {   // 현재 row 위치에서 숫자 개수만큼 더한다. (down row로 이동)
-                k += Integer.valueOf(cmd[i].substring(2));
-            } 
-            else if(order == 'C')
-            {
-                // 현재 row를 remove stack에 저장, 테이블 size down
-                remove.push(k);
-                table_size -= 1;
-                if(k == table_size) k -= 1; //  삭제된 행이 가장 마지막 행인 경우, 바로 윗행 선택
-            } 
-            else // z : 최근삭제행 복구
-            {
-                
-                int recent_row = remove.pop(); // 가장 최근에 삭제된 행을 가져온다.
-                if(k >= recent_row) k += 1; // ?
-                table_size += 1;
-            }
+        // (연산)최솟값이 8보다 크면 -1을 return 합니다.
+        if (count > 8) {  
+            answer = -1;
+            return;
+        }
+
+        // 이전 dfs값이 목표값과 동일하면
+        if (prev == targetNumber) {
+            // 처음 answer : 최대 숫자값이므로 count가 answer로 들어가고, 
+            // 이후 answer : 처음 들어간 count값과 이후 dfs를 통한 count값을 비교해 answer 세팅
+            answer = Math.min(answer, count);
+            return;
+        }
+
+        int tempN = n;
+       
+        // 8 > 7 > 6..으로 감소하면서 dfs 쭉 진행(최대 8번)
+        // 각 가지별로 사칙연산 4가지 + 숫자 이어붙이기 진행
+        for (int i = 0; i < 8 - count; i++) {  
+            int plusCount = count + i + 1;
+            dfs(plusCount, prev + tempN);
+            dfs(plusCount, prev - tempN);
+            dfs(plusCount, prev / tempN);
+            dfs(plusCount, prev * tempN);
+
+            tempN = tempN * 10 + n;
         }
         
         
-        
-        StringBuilder sb = new StringBuilder();
-        
-        // 현재 테이블의 크기만큼은 행이 삭제되지 않은 것이므로 'O'를 append 해준다.
-        for(int i = 0; i < table_size; i++) {
-            sb.append('O');
-        }
-        
-        // 스텍에서 삭제된 행을 순서대로 꺼내며 위치를 복구해주고, 해당 위치에는 'X'를 insert 해준다.        
-        while(!remove.isEmpty()) {
-            sb.insert(remove.pop().intValue(), 'X');
-        }
-        
-        return sb.toString();
     }
    
 }
