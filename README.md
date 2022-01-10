@@ -4,25 +4,25 @@
 
 ## 일시 : 매주 토요일 PM 10:00 (ZOOM)
 
-### week 01) 문자열
+### week 01. 문자열
 
---1. 유효한 펠린드롬(https://leetcode.com/problems/valid-palindrome/)
+> 1. 유효한 펠린드롬(https://leetcode.com/problems/valid-palindrome/)
+>
+> 2. 문자열 뒤집기(https://leetcode.com/problems/reverse-string/)
+>
+> 3. 로그 파일 재정렬(https://leetcode.com/problems/reorder-data-in-log-files/)
+>
+> 4. 가장 흔한 단어(https://leetcode.com/problems/most-common-word/)
 
---2. 문자열 뒤집기(https://leetcode.com/problems/reverse-string/)
-
---3. 로그 파일 재정렬(https://leetcode.com/problems/reorder-data-in-log-files/)
-
---4. 가장 흔한 단어(https://leetcode.com/problems/most-common-word/)
-
-### week 02)
+### week 02.
 
 --1. 
 
-### week 03)
+### week 03.
 
 --작성중
 
-### week 04)
+### week 04.
 
 --작성중
 
