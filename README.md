@@ -7,24 +7,24 @@
 ### week 01. 문자열
 
 > 1. 유효한 펠린드롬(https://leetcode.com/problems/valid-palindrome/)
->    -- 작성중
+> 
 > 2. 문자열 뒤집기(https://leetcode.com/problems/reverse-string/)
->   -- 작성중
+> 
 > 3. 로그 파일 재정렬(https://leetcode.com/problems/reorder-data-in-log-files/)
->   -- 작성중
+>  
 > 4. 가장 흔한 단어(https://leetcode.com/problems/most-common-word/)
->    -- 작성중
+>  
 
 ### week 02. 문자열, 배열
 
 > 1. 그룹 애너그램(https://leetcode.com/problems/group-anagrams/)
->   -- 작성중
+> 
 > 2. 가장 긴 팰린드롬 부분 문자열(https://leetcode.com/problems/longest-palindromic-substring/)
->   -- 작성중
+>  
 > 3. 두 수의 합(https://leetcode.com/problems/two-sum/)
->   -- 작성중
+> 
 > 4. 빗물 트래핑(https://leetcode.com/problems/trapping-rain-water/) 
->   -- 작성중
+>  
 
 ### week 03. 배열
 
