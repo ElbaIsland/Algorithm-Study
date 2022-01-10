@@ -7,7 +7,7 @@
 ### week 01. 문자열
 
 > 1. 유효한 펠린드롬
-> (https://leetcode.com/problems/valid-palindrome/)
+(https://leetcode.com/problems/valid-palindrome/)
 > 
 > 2. 문자열 뒤집기
 > (https://leetcode.com/problems/reverse-string/)
