@@ -26,21 +26,26 @@
 
 ### week 02. 문자열, 배열
 
+
 1. 그룹 애너그램<br>
 (https://leetcode.com/problems/group-anagrams/)
 <br>
+
 2. 가장 긴 팰린드롬 부분 문자열<br>
 (https://leetcode.com/problems/longest-palindromic-substring/)
- <br>
+<br>
+ 
 3. 두 수의 합<br>
 (https://leetcode.com/problems/two-sum/)
 <br>
+
 4. 빗물 트래핑<br>
 (https://leetcode.com/problems/trapping-rain-water/) 
 <br>
 <br>
 
 ### week 03. 배열
+
 
 1. 세 수의 합<br>
 (https://leetcode.com/problems/3sum/)
@@ -61,6 +66,7 @@
 
 ### week 04. 연결 리스트
 
+
 1. 팰린드롬 연결 리스트<br>
 (https://leetcode.com/problems/palindrome-linked-list/)
 <br>
@@ -79,7 +85,7 @@
 <br>
 
 ### week 04. 연결 리스트
-<br>
+
 
 1. 팰린드롬 연결 리스트<br>
 (https://leetcode.com/problems/palindrome-linked-list/)
@@ -99,7 +105,7 @@
 <br>
 
 ### week 05. 연결 리스트 2
-<br>
+
 
 1. 페어의 노드 스왑<br>
 (https://leetcode.com/problems/swap-nodes-in-pairs/)
@@ -128,7 +134,7 @@
 
 
 ### week 06. 스택 / 큐 / 힙
-<br>
+
 
 1. 다리를 지나는 트럭<br>
 (https://programmers.co.kr/learn/courses/30/lessons/42583)
@@ -144,11 +150,12 @@
 <br>
 
 ### week 07. 힙 / 완전탐색
-<br>
+
 
 1. 이중 우선순위 큐<br>
 (https://programmers.co.kr/learn/courses/30/lessons/42628)
 <br>
+
 2. 디스크 컨트롤러<br>
 (https://programmers.co.kr/learn/courses/30/lessons/42627)
 <br>
