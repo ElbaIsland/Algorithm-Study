@@ -127,8 +127,7 @@
 
 ### week 08. 정렬
 
-0. 정렬 알고리즘이란 : 주어진 문제에 대해, 특정 순서대로 나열하여 푸는 알고리즘.
-<br>
+0. 정렬 알고리즘이란 : 주어진 문제에 대해, 특정 순서대로 나열하여 푸는 알고리즘.<br>
 
 1. K-번째 수<br>
 (https://programmers.co.kr/learn/courses/30/lessons/42748)
@@ -142,8 +141,7 @@
 
 ### week 09. 해시
 
-0. 해시 알고리즘이란 : key-value 쌍으로 데이터를 (빠르게)찾는 알고리즘
-<br>
+0. 해시 알고리즘이란 : key-value 쌍으로 데이터를 (빠르게)찾는 알고리즘<br>
 
 1. 완주하지 못한 선수<br>
 (https://programmers.co.kr/learn/courses/30/lessons/42576)
@@ -199,12 +197,10 @@
 
 ### week 14. 이분탐색 / 동적계획법
 
-0-1. 이분탐색 알고리즘이란 : <br>
-      작성중
-
-0-2. 동적계획법 알고리즘이란 : <br>
-      작성중
-<br>
+0. 이분탐색 알고리즘이란 : <br>
+   작성중<br>
+   동적계획법 알고리즘이란 : <br>
+   작성중<br>
 
 1. 입국심사(이분탐색)<br>
 (https://programmers.co.kr/learn/courses/30/lessons/43238)
@@ -234,8 +230,7 @@
 ### week 17. 탐욕법
 
 0. 탐욕법 알고리즘이란 : <br>
-      작성중
-<br>
+   작성중<br>
 
 1. 체육복<br>
 (https://programmers.co.kr/learn/courses/30/lessons/42862)
