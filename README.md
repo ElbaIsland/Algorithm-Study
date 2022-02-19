@@ -51,9 +51,6 @@
 
 ### week 04. 연결 리스트
 
-0. 연결 리스트 알고리즘이란 : 가능한 모든 CASE를 탐색하여 푸는 알고리즘.<br>
-   노드간 연결을 직접 지정하여 리스트를 만드는 경우의 알고리즘.<br>
-
 1. 팰린드롬 연결 리스트<br>
 (https://leetcode.com/problems/palindrome-linked-list/)
 
@@ -91,9 +88,6 @@
 
 ### week 06. 스택 / 큐 / 힙
 
-0. 스택/큐 알고리즘이란 : FIFO/LIFO, push/pop을 통해 푸는 알고리즘.<br>
-   힙 알고리즘이란 : 사용자가 우선순위를 임의로 설정할 수 있는 우선순위 큐(PriorityQueue)를 통해 푸는 알고리즘.<br>
-
 1. 다리를 지나는 트럭<br>
 (https://programmers.co.kr/learn/courses/30/lessons/42583)
 
@@ -105,8 +99,6 @@
 <br>
 
 ### week 07. 힙 / 완전탐색(브루트 포스)
-
-0. 완전탐색(브루트 포스) 알고리즘이란 : 가능한 모든 CASE를 탐색하여 푸는 알고리즘.<br>
 
 1. 이중 우선순위 큐<br>
 (https://programmers.co.kr/learn/courses/30/lessons/42628)
@@ -127,8 +119,6 @@
 
 ### week 08. 정렬
 
-0. 정렬 알고리즘이란 : 주어진 문제에 대해, 특정 순서대로 나열하여 푸는 알고리즘.<br>
-
 1. K-번째 수<br>
 (https://programmers.co.kr/learn/courses/30/lessons/42748)
 
@@ -141,8 +131,6 @@
 
 ### week 09. 해시
 
-0. 해시 알고리즘이란 : key-value 쌍으로 데이터를 (빠르게)찾는 알고리즘<br>
-
 1. 완주하지 못한 선수<br>
 (https://programmers.co.kr/learn/courses/30/lessons/42576)
 
@@ -154,11 +142,6 @@
 <br>
 
 ### week 10. 해시 / DFS & BFS
-
-0. DFS 알고리즘이란 : 깊이우선탐색 알고리즘으로, 최대한 깊이 내려간 뒤, 더이상 깊이 갈 곳이 없을 경우 옆으로 이동한다.<br>
-   자기자신을 계속해서 호출하는 순환 구조를 갖는 알고리즘<br>
-   BFS 알고리즘이란 : 너비우선탐색 알고리즘으로, 최대한 넓게 이동한 다음, 더 이상 갈 수 없을 때 아래로 이동한다.<br>
-   자기자신을 계속해서 호출하는 순환 구조를 갖는 알고리즘<br>
 
 1. 베스트 앨범<br>
 (https://programmers.co.kr/learn/courses/30/lessons/42579)
@@ -197,11 +180,6 @@
 
 ### week 14. 이분탐색 / 동적계획법
 
-0. 이분탐색 알고리즘이란 : <br>
-   작성중<br>
-   동적계획법 알고리즘이란 : <br>
-   작성중<br>
-
 1. 입국심사(이분탐색)<br>
 (https://programmers.co.kr/learn/courses/30/lessons/43238)
 
@@ -228,9 +206,6 @@
 <br>
 
 ### week 17. 탐욕법
-
-0. 탐욕법 알고리즘이란 : <br>
-   작성중<br>
 
 1. 체육복<br>
 (https://programmers.co.kr/learn/courses/30/lessons/42862)
