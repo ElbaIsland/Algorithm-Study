@@ -3,31 +3,35 @@ package week08;
 import java.util.*;
 
 public class TheBiggestNum {
+	
+// í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ > ì •ë ¬ > ê°€ì¥ í° ìˆ˜(https://programmers.co.kr/learn/courses/30/lessons/42746)
+// ì„¤ëª… : numbers ë°°ì—´ë¡œ ì£¼ì–´ì§„ ì •ìˆ˜ë¥¼ ì¡°í•©í•´ ë§Œë“¤ ìˆ˜ ìˆëŠ” ê°€ì¥ í° ìˆ˜ë¥¼ returní•œë‹¤.
+	
     public String solution(int[] numbers) {
         
         String answer = "";
         String strNumbers[] = new String[numbers.length];
       
-        // °¢ numbers[i] Á¤¼ö¸¦ ¹®ÀÚ¿­·Î º¯È¯
+        // 1) ê° numbers[i] ì •ìˆ˜ë¥¼ ë¬¸ìì—´ë¡œ ë³€í™˜
         for(int i=0; i<strNumbers.length; i++) {
 			    strNumbers[i] = String.valueOf(numbers[i]);
 		    }
         
-        //  ¹®ÀÚ¿­ Á¤·Ä ¸í·É¾î(stringÀÎµ¥µµ °¡´É!!)
-        //  ³»¸²Â÷¼ø : return (s2+s1).compareTo(s1+s2);
-        //  ¿À¸§Â÷¼ø : return (s1+s2).compareTo(s1+s2);
-        //  ¹®ÀÚ¿­ s1°ú ¹®ÀÚ¿­ s2°¡ ÀÔ·ÂµÇ¾úÀ» ¶§,
-        //  s1ÀÌ »çÀüÀûÀ¸·Î s2º¸´Ù µÚ¿¡ ÀÖ´Ù¸é À½¼ö(µÚ¹Ù²Ù±â),
-			  //  °°´Ù¸é 0, ¾Õ¿¡ ÀÖ´Ù¸é ¾ç¼ö(±×´ë·Î)¸¦ ¸®ÅÏ
+	//  2) ë³€í™˜ëœ ë¬¸ìì—´ì„ ì •ë ¬    
+        //  ë¬¸ìì—´ ì •ë ¬ ëª…ë ¹ì–´(stringì¸ë°ë„ ê°€ëŠ¥!!)
+        //  ë‚´ë¦¼ì°¨ìˆœ : return (s2+s1).compareTo(s1+s2);
+        //  ì˜¤ë¦„ì°¨ìˆœ : return (s1+s2).compareTo(s1+s2);
+        //  ë¬¸ìì—´ s1ê³¼ ë¬¸ìì—´ s2ê°€ ì…ë ¥ë˜ì—ˆì„ ë•Œ,
+        //  s1ì´ ì‚¬ì „ì ìœ¼ë¡œ s2ë³´ë‹¤ ë’¤ì— ìˆë‹¤ë©´ ìŒìˆ˜(ë’¤ë°”ê¾¸ê¸°), ê°™ë‹¤ë©´ 0, ì•ì— ìˆë‹¤ë©´ ì–‘ìˆ˜(ê·¸ëŒ€ë¡œ)ë¥¼ ë¦¬í„´
         Arrays.sort(strNumbers, (s1,s2) -> (s2+s1).compareTo(s1+s2));
-				// ** º°¼±»ıÀÇ ²Ù¸£ÆÁ : À§ compareTo ¸Ş¼Òµå´Â ´Ü¼øÈ÷ int, String »Ó¸¸ ¾Æ´Ï¶ó
-				// ¹è¿­ÇüÅÂÀÇ ÀÚ·á±¸Á¶¸é ¾î¶² °ÍÀÌµç Á¤·ÄÀÌ °¡´ÉÇÏ´Ù! 
+	// ** ë³„ì„ ìƒì˜ ê¾¸ë¥´íŒ : ìœ„ compareTo ë©”ì†Œë“œëŠ” ë‹¨ìˆœíˆ int, String ë¿ë§Œ ì•„ë‹ˆë¼
+	// ë°°ì—´í˜•íƒœì˜ ìë£Œêµ¬ì¡°ë©´ ì–´ë–¤ ê²ƒì´ë“  ì •ë ¬ì´ ê°€ëŠ¥í•˜ë‹¤! 
 			
         //  System.out.println(Arrays.toString(strNumbers));
         
-				if(strNumbers[0].equals("0")) {
-					return "0";
-				}
+	if(strNumbers[0].equals("0")) {
+		return "0";
+	}
 
         for(String number : strNumbers){
             answer += number; 
