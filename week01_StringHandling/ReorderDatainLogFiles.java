@@ -1,4 +1,4 @@
-package week01;
+package week01_StringHandling;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;

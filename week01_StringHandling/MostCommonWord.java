@@ -1,4 +1,4 @@
-package week01;
+package week01_StringHandling;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,12 +8,16 @@ import java.util.Map;
  * ====================
    리트코드(LeetCode) 819번 문제 가장 흔한 단어
  
- - 주어진 문자열에서 가장 많이 사용된 단어를 찾는 문제
+ - 문제 : 주어진 문자열에서 '가장 많이 사용된 단어'를 찾는 문제
  - 풀이 : 
+   1) 주어진 문자열에서 각각의 단어를 쪼갠 뒤, String 배열에 넣는다.  
+   2) String 배열을 하나씩 비교하여, 각 단어와 그 개수를 map 형태의 배열에 넣어준다.
+   3) 가장 높은 count의 단어를 확인하여 return한다. 
   
  */
 
 public class MostCommonWord {
+	
     public String mostCommonWord(String paragraph, String[] banned) {
     	
     	for (int i = 0; i < banned.length; i++) {

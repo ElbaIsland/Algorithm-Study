@@ -1,4 +1,4 @@
-package week01;
+package week01_StringHandling;
 
 /* ====================
  * 문자열 조작 
