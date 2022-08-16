@@ -1,4 +1,4 @@
-package week_2208_02;
+package week_2208_02_Hash;
 
 import java.util.Arrays;
 import java.util.HashMap;
