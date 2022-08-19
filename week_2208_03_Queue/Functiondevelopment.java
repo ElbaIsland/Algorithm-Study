@@ -30,19 +30,15 @@ public class Functiondevelopment {
         // 4) 위의 1~3번 과정을 통해, 큐에는 순서대로 작업 진도별 배포일자가 들어감
         // 5) queue를 하나씩 빼내서, progress 순서대로 같은 날짜의 배포일자를 묶어서 return용 배열에 추가
         Queue<Integer> queue = new LinkedList<>();
-        int[] answer = {};
         List<Integer> answerList = new ArrayList<Integer>();
-        int cnt;
-        int cnt2 = 0;
         
         for(int i = 0; i < progresses.length; i++){
             
-            cnt = 0;
+            int cnt = 0;
             var progress = progresses[i];
-            cnt++;
             var speed = speeds[i];
             
-            while(progress >= 100){
+            while(progress<100){
                 progress = progress + speed;
                 cnt++;
             }
@@ -50,34 +46,31 @@ public class Functiondevelopment {
         }
         
         // 이 시점에서, 큐는 7,3,9...이런 식으로 작업완료일 순으로 들어있다. 앞 큐를 빼내서 다음 큐랑 비교한다.
-        // - 앞 숫자가 더 클 경우, 
-        // - 서로 같을 경우,
-        // - 뒤 숫자가 더 클 경우, 지금까지 더한 cnt를 answer 배열에 넣기
-        System.out.println(queue);
+        // - 앞 숫자가 더 크거나 같을 경우, return count를 더하고 큐에서 값을 뺀다
+        // - 뒤 숫자가 더 클 경우, 지금까지 더한 cnt를 answer 배열에 넣는다.
+  //      System.out.println(queue);
         
-        int first = queue.poll();
+        int frontDay = queue.poll(); 
+        int cnt2 = 1;
         
         while(!queue.isEmpty()){
         
-            int second = queue.peek(); 
-            System.out.print("first : " + first + ", second : " + second + " | ");
-            
-            if(first >= second){
-                System.out.println("cnt2 up & queue 값 빼기");
+            if(frontDay >= queue.peek())
+            {
                 cnt2++;
                 queue.poll();
             }
-            else{
-                first = second;
-                System.out.println("list add >> cnt2 : " + cnt2);
+            else
+            {
                 answerList.add(cnt2);
                 cnt2 = 1;
-                queue.poll();
+                frontDay = queue.poll();
             }
-
         }
-     
-        System.out.println(answerList.toString()); 
-        return answer;
-    }    
+        answerList.add(cnt2);
+        
+  //    System.out.println(answerList.toString());
+        
+        return answerList.stream().mapToInt(i->i).toArray();
+    }
 }
