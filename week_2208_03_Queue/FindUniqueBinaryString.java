@@ -6,7 +6,6 @@ import java.util.*;
  * 
  * ====================
 
-  
  */
 public class FindUniqueBinaryString {
     public String findDifferentBinaryString(String[] nums) {
